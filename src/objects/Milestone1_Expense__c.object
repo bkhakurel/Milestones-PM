@@ -5,6 +5,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -17,11 +21,19 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -86,6 +98,7 @@
         <relationshipLabel>Expenses</relationshipLabel>
         <relationshipName>Project_Expenses</relationshipName>
         <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>

@@ -5,6 +5,10 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Clone</actionName>
         <content>Milestone1_Clone_Project</content>
         <skipRecordTypeSelect>false</skipRecordTypeSelect>
@@ -19,11 +23,19 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -38,7 +50,7 @@
     <description>Force.com Labs - PM - A collaborative enterprise which has a planned goal. A project can have many milestones.</description>
     <enableActivities>false</enableActivities>
     <enableEnhancedLookup>false</enableEnhancedLookup>
-    <enableFeeds>true</enableFeeds>
+    <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
     <fields>
@@ -47,7 +59,6 @@
         <inlineHelpText>The date by which the project is scheduled to be completed by.</inlineHelpText>
         <label>Deadline</label>
         <required>false</required>
-        <trackFeedHistory>true</trackFeedHistory>
         <type>Date</type>
     </fields>
     <fields>
@@ -56,7 +67,6 @@
         <inlineHelpText>A general description of the project.</inlineHelpText>
         <label>Description</label>
         <length>5000</length>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
     </fields>
@@ -79,7 +89,6 @@
         <inlineHelpText>Calculated.</inlineHelpText>
         <label>GoogleGanntUrl</label>
         <length>32000</length>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
     </fields>
@@ -89,7 +98,6 @@
         <label>Import ID</label>
         <length>18</length>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
@@ -99,7 +107,6 @@
         <inlineHelpText>What date should this project start?</inlineHelpText>
         <label>Kickoff</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Date</type>
     </fields>
     <fields>
@@ -108,7 +115,6 @@
         <inlineHelpText>Calculated as the next incomplete task with a due date in this project. This includes sub-milestones.</inlineHelpText>
         <label>Next Project Milestone Due Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Date</type>
     </fields>
     <fields>
@@ -117,7 +123,6 @@
         <inlineHelpText>The next incomplete milestone due date. This does not include sub-milestones.</inlineHelpText>
         <label>Next Project Top Milestone Due Date</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Date</type>
     </fields>
     <fields>
@@ -128,7 +133,6 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -140,7 +144,6 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -284,7 +287,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
-        <trackFeedHistory>true</trackFeedHistory>
         <type>Picklist</type>
     </fields>
     <fields>
@@ -295,7 +297,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -307,7 +308,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -319,7 +319,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -330,7 +329,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -341,7 +339,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -352,7 +349,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Currency</type>
     </fields>
     <fields>
@@ -363,7 +359,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -375,7 +370,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -387,7 +381,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -399,7 +392,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -411,7 +403,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -423,7 +414,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -435,7 +425,6 @@ IMAGE( Status_TasksOpenComplete__c , &quot;Open vs. Complete Tasks&quot;) , &apo
     </listViews>
     <nameField>
         <label>Project Name</label>
-        <trackFeedHistory>true</trackFeedHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Projects</pluralLabel>
